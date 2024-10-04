@@ -37,5 +37,5 @@ def convert_smiles():
 
     return template('result.html', xmol_data=xmol_data, url=url)
 
-# if __name__ == "__main__":
-#   app.run(host='localhost', port=8080)
+if __name__ == "__main__":
+  app.run(host='localhost', port=8080)
