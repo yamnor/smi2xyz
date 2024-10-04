@@ -11,6 +11,5 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ],
-  "devCommand": "gunicon -w 2 app:app"
+  ]
 }
