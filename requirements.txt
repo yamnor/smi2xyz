@@ -1,0 +1,3 @@
+bottle
+rdkit-pypi
+lzstring

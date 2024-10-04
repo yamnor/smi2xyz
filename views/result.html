@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smi2xyz - Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-green-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto max-w-3xl p-8 bg-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-center text-green-600 mb-8">Result</h1>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-2xl font-medium mb-4 text-gray-800">XYZ Format</h2>
+            <pre class="bg-gray-100 p-4 rounded-md text-sm overflow-auto">{{!xmol_data}}</pre>
+        </div>
+        <div class="text-center mb-6">
+            <a href="{{url}}" target="_blank" class="inline-block bg-green-500 text-white text-lg px-6 py-3 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">View</a>
+        </div>
+        <div class="text-center">
+            <a href="/" class="inline-block bg-blue-500 text-white text-lg px-6 py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Back</a>
+        </div>
+    </div>
+</body>
+</html>

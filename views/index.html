@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smi2xyz - Convert SMILES to XYZ</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="/static/favicon.ico">
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-blue-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto max-w-3xl p-8 bg-white shadow-lg rounded-lg">
+        <h1 class="text-5xl font-bold text-center text-blue-600 mb-10">SMILES to XYZ Converter</h1>
+        <p class="text-lg text-center text-gray-700 mb-8">Enter a SMILES string below to convert it to 3D XYZ coordinates.</p>
+        <form action="/convert" method="post" class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="smiles" class="block text-xl font-medium text-gray-800">SMILES Input:</label>
+                <textarea id="smiles" name="smiles" rows="4" class="mt-2 block w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none" placeholder="e.g. CC(=O)O"></textarea>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 text-white text-lg px-6 py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Convert</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
