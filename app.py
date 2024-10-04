@@ -1,7 +1,7 @@
-from bottle import Bottle, template, request, static_file
-from rdkit import Chem
-from rdkit.Chem import AllChem
-import lzstring
+from bottle import Bottle #, template, request, static_file
+# from rdkit import Chem
+# from rdkit.Chem import AllChem
+# import lzstring
 
 app = Bottle()
 
