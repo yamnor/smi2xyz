@@ -11,7 +11,8 @@ def send_static(filename):
 
 @app.route('/')
 def index():
-  return template('index.html')
+  #return template('index.html')
+  return '<b>Hello World</b>!'
 
 @app.route('/convert', method='POST')
 def convert_smiles():
@@ -37,5 +38,5 @@ def convert_smiles():
 
     return template('result.html', xmol_data=xmol_data, url=url)
 
-# if __name__ == "__main__":
-#   app.run(host='localhost', port=8080)
+if __name__ == "__main__":
+  app.run(host='localhost', port=8080)
